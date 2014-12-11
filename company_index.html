@@ -3,11 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title>公司主页</title>
+			<link href="http://static.tianji.com/stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
 		<link  rel="stylesheet" href="http://image.tianji.com/tjs/styles/base.css" />
 		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>
+		<script type="text/javascript" src="js/commpany_scroll.js" ></script>
 	</head>
 	
 	<body>
+		 <div class="wrap">
 		<div class="commpany_warp">
 			<div class="commpany_index_left">
 				<div class="commpany_index_name_tag section_box section_box_left">
@@ -15,20 +19,155 @@
 						<img src="images/company_big_log.png" width="198" height="160" alt="阿里巴巴">	
 					</div>
 					<div class="commpany_logo_right">
+						 <div class="commpany_name">
 						<h1 class="font_st">阿里巴巴(中国)有限公司</h1>
 						<p>“致力为全球所有人创造便捷的网上交易渠道”</p>
-						
+                         </div>
+                        <div class="company_tags">
+                        	<span class="pink_style">有钱</span>
+                        	<span class="blue_style">有人</span>
+                        	<span class="pink_style">有钱就任性</span>
+                        	<span class="blue_style">有钱</span>
+                        	<span class="pink_style">有人</span>
+                        	<span class="blue_style">有钱就任性</span>
+                        	<span class="pink_style">有钱</span>
+                        	<span class="blue_style">有人</span>
+                        	<span class="pink_style">有钱就任性</span>
+                        	<span class="blue_style">有钱</span>
+                        	
+                        	<span class="pink_style">有钱就任性</span>
+                        </div> 
+                         
+                         <div class="commpany_right_top">
+                         	
+                         	 <span class="attention"><i class="attention_icon add_attention"></i>1115</span>
+                         	<span class="un_like"><i class="png_ie6 icon_i un_like_icon"></i>(231)</span>
+                            <!--can have "is_un_like"-->
+                         	<span class="like"><i class="png_ie6 icon_i like_icon is_like"></i>(231)</span>                   	
+                         </div>        
 					</div>
-					
+				</div>
+				<div class="commpany_nav">
+					<ul>
+						<li class="current_nav"><a href="#">首页</a></li>
+						<li><a href="#">新闻</a></li>
+						<li><a href="#">公司点评</a></li>
+						<li><a href="#">职位</a></li>
+						
+						
+					</ul>
 					
 					
 				</div>
-				
+				<div class="commpany_news section_box">
+					<div class="feeds_tab">
+                        <ul class="select_area">
+                             	<li><a href="javascript:void(0);">新闻动态</a></li>
+                         </ul>	
+            	</div>
+					<div  class="commpany_news_list "> 
+					 <ul>
+					 	<li><a href="#"><i>【新闻】</i>消息称阿里巴巴5.6亿元投资韩国SM娱乐</a> </li>
+					 	<li><a href="#"><i>【新闻】</i>消息称阿里巴巴5.6亿元投资韩国SM娱乐</a> </li>
+					 	<li><a href="#"><i>【新闻】</i>消息称阿里巴巴5.6亿元投资韩国SM娱乐 </a></li>
+					 	<li><a href="#"><i>【新闻】</i>消息称阿里巴巴5.6亿元投资韩国SM娱乐</a> </li>
+					 	<li><a href="#"><i>【新闻】</i>消息称阿里巴巴5.6亿元投资韩国SM娱乐</a> </li>
+					 	<li><a href="#"><i>【新闻】</i>消息称阿里巴巴5.6亿元投资韩国SM娱乐</a> </li>
+					 	<li><a href="#"><i>【新闻】</i>消息称阿里巴巴5.6亿元投资韩国SM娱乐</a> </li>
+					 	<li><a href="#"><i>【新闻】</i>消息称阿里巴巴5.6亿元投资韩国SM娱乐</a> </li>
+					 </ul>
+					</div>
+				</div>
 			</div>
+			
+			  <div class="commpany_hot_review">
+			  	<img src="images/company_gsrp.jpg">
+			  </div>
+			  
+			  <div class="commpany_production section_box">
+			  	<div class="feeds_tab">
+                        <ul class="select_area">
+                             	<li><a href="javascript:void(0);">最新动态</a></li>
+                         </ul>	
+               </div>
+               
+               <div class="commpany_production_box">
+               	  <ul id="commpany_productionul">
+               	  	<li>
+               	  		<a href="#"><img src="images/company_cp_img.png" width="160" height="160" alt=""></a>
+               	  		<div class="right_mes_show">
+               	  			<h4>产品介绍</h4>
+               	  			<p>腾讯公司成立于1998年11月，是目前中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一。</p>
+               	  			
+               	  		</div>
+               	  	</li>
+               	  	<li>
+               	  		<a href="#"><img src="images/company_cp_img.png" width="160" height="160" alt=""></a>
+               	  		<div>
+               	  			<h4>产品介绍</h4>
+               	  			<p>腾讯公司成立于1998年11月，是目前中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一。</p>
+               	  			
+               	  		</div>
+               	  	</li>
+               	  	<li>
+               	  		<a href="#"><img src="images/company_cp_img.png" width="160" height="160" alt=""></a>
+               	  		<div>
+               	  			<h4>产品介绍</h4>
+               	  			<p>腾讯公司成立于1998年11月，是目前中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一。</p>
+               	  			
+               	  		</div>
+               	  	</li>
+               	  	<li>
+               	  		<a href="#"><img src="images/company_cp_img.png" width="160" height="160" alt=""></a>
+               	  		<div>
+               	  			<h4>产品介绍</h4>
+               	  			<p>腾讯公司成立于1998年11月，是目前中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一。</p>
+               	  			
+               	  		</div>
+               	  	</li>
+               	  	 	<li>
+               	  		<a href="#"><img src="images/company_cp_img.png" width="160" height="160" alt=""></a>
+               	  		<div>
+               	  			<h4>产品介绍</h4>
+               	  			<p>腾讯公司成立于1998年11月，是目前中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一。</p>
+               	  			
+               	  		</div>
+               	  	</li>
+               	  	
+               	  	
+               	  	
+               	  </ul>
+               	<a href="javascript:(0)" id="commpany_production_left">
+               		
+               	</a>
+               	<a href="javascript:(0)" id="commpany_production_right">               		
+               	</a>
+               </div> 
+            
+			  	
+			  	
+			  </div>
 			
 			
 		</div>
 		
+		</div>
 		
+		<script type="text/javascript">
+			$(document).ready(function(){
+		  $.fn.scrollfn({
+			InterTime:5000,
+			OverTime:1000,
+			type: 0,                  //0是左右滚动切换效果 1 是渐隐渐露效果 3直接的显示与隐藏效果
+ 			leftbtn:"#commpany_production_left",             //左右切换按钮的类名设置
+			rightbtn:"#commpany_production_right",
+			isAutomatic: 0,           //自动执行效果的开关
+			deomShownum:4,            //滚动框架内要显示的滚动的子元素的个数 0表示一个默认是0,此阀值是为了处理滚动样式下框架可显示多个时滚动到最后出现                           //的滚动空白，保证最后一个显示的情况下直接滚动回第一个
+			BnanerGeshu: 1,           //在滚动效果下的滚动个数，只对拥有左右按钮时有意义 		
+				},"#commpany_productionul")
+				
+			})
+			
+		</script>
 	</body>
 </html>
