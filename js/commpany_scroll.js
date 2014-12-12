@@ -78,6 +78,38 @@
 				timer = setInterval(startDirection, Options.InterTime);
 			}
 		}
+		///////// 新增处理鼠标放上去现实展示层的效果 ／／／定制方案
+		function overimagebox(){
+			var _imgboxli=ImgBox.children(Options.ImgBoxChild);
+			
+			_imgboxli.bind("mouseover",function(){
+		    var thisi = Math.ceil(Math.abs(ImgBox.position().left / (ImgBox.children(Options.ImgBoxChild).outerWidth(true)*Options.BnanerGeshu)) );
+			clearInterval(timer);
+			if(Options.type==0){
+			    var i=$(this).index();
+			     var control_i=i-thisi;
+			     var partition_i=Math.round(Options.deomShownum/2)
+			     if(control_i<partition_i){
+			     	_imgboxli.children("div").removeClass("right_mes_show left_mes_show").eq(i).addClass("right_mes_show")
+			     }
+			     else{
+			     	_imgboxli.children("div").removeClass("right_mes_show left_mes_show").eq(i).addClass("left_mes_show")
+			     	
+			     }
+			     
+			  }
+		  })
+		  _imgboxli.bind("mouseleave",function(){
+		  	Automatic(); 
+		 _imgboxli.children("div").removeClass("right_mes_show left_mes_show")
+		  	
+		  	
+		  })
+			
+		}
+		overimagebox()
+		
+		
 		//////////按键显示的方法  type=0 默认是左右形式
 		function btnStart(num) {
 			var i = num;
