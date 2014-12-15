@@ -26,11 +26,13 @@ a{ text-decoration: none;}
 .commpany_name{ width: 100%; height: 60px;}
 
 .company_tags { width: 410px; }
-.company_tags span{ float: left; display: block; margin:2px; display: inline; padding: 5px 10px; font-size: 12px;  }
+.company_tags span{ float: left; display: block; margin:2px; display: inline; padding: 5px 10px; font-size: 12px; white-space: nowrap;  }
 .company_tags span.pink_style{ background:#fbaa9c ; border: #f8725a  solid 1px;}
 .company_tags span.blue_style{ background: #9eceee; border: #5dade2 solid 1px;}
-
-.commpany_right_top{ width: 100%; position: absolute; top: 0px; height: 20px; }
+.company_fenxiang{ margin-top: 20px;}
+.company_fenxiang div{ float: left;}
+.company_fenxiang_pre{ font-size: 14px; color: #999999;}
+.commpany_right_top{  position: absolute; top: 0px; right: 0px; height: 20px; }
 .commpany_right_top span{ display: block; float: right; font-size: 12px;  margin-right: 8px; display: inline;font-family: arial;}
 .commpany_right_top span i{ width:14px; height: 14px; background: url(../images/company_icon.png); float: left; margin-right: 5px; display: inline;  }
 .commpany_right_top span.like{ color: #e74c3c; line-height: 14px; margin-top: 4px;}
@@ -144,8 +146,8 @@ float:left; margin:0px 5px; display: inline;}
 .commany_right_btn a {font-size: 16px; color: #FFFFFF;}
 
 .right_aside{ width: 298px; padding-bottom: 10px;}
-.right_commpany_mes dl{ display: block; padding:20px 10px;}
-.right_commpany_mes dl dt,.right_commpany_mes dl dd{ display: block; margin:3px 5px; float: left; display: inline; background: #f7f7f7; height: 24px; font-size: 12px; line-height: 24px;}
+.right_commpany_mes dl{ display: block; padding:20px 10px; _height:200px ;}
+.right_commpany_mes dl dt,.right_commpany_mes dl dd{ display: block; margin:3px 5px; float: left; display: inline; background: #f7f7f7; height: 24px; overflow: hidden; font-size: 12px; line-height: 24px;}
 .right_commpany_mes dl dt{ width: 82px; text-align: center; color: #999999;}
 .right_commpany_mes dl dd{ width: 160px; padding-left: 10px;}
 .right_commpany_mes dl dd a{ ccolor: #2a7fb8; text-decoration: underline;}
@@ -153,7 +155,7 @@ float:left; margin:0px 5px; display: inline;}
 
 /*创始人*/
 .right_aside_title{ height: 42px; line-height: 42px; border-bottom: #D1D1D1 solid 1px; position: relative;}
-.right_aside_title h3{ padding-left: 20px;}
+.right_aside_title h3{ padding-left: 20px; font-size: 16px;  font-family:"微软雅黑"; color: #454545;}
 .right_aside_title a.more{position: absolute; padding-right:20px; top: 0px;  right: 20px; font-size: 12px; color: #2a7fb8;}
 .right_aside_title span{ position: absolute; right: 20px; top: 0px; font-size: 12px; color: #2a7fb8;}
 .commpany_creator_card{ padding: 20px; overflow: hidden;}
@@ -172,9 +174,9 @@ float:left; margin:0px 5px; display: inline;}
 
 /*add islogin */
 /*雇员处理*/
-#popup_layer_servant_ul{ width: 100%; height: 100%;}
-.popup_layer_servant{ position: relative; overflow: hidden; }
-.popu_layer_servant_box{ position: absolute;top: 6px; left: 18px; height: 50px; width: 260px;}
+#popup_layer_servant_ul{ }
+.popup_layer_servant{ position: relative; overflow: hidden; width: 280px; }
+.popu_layer_servant_box{ position: absolute;top: 6px; left: 18px;height: 50px; overflow: hidden; width: 260px; display: none;}
 .popu_layer_img_box{ width: 50px; height: 50px; overflow: hidden; float: left;}
 .popu_layer_servant_mes{ color: #fff; font-size: 12px; line-height: 20px; padding: 5px 8px; width:110px; height: 40px; float: left;}
 .popu_layer_servant_mes h5 strong{ font-weight:bold; margin-right: 5px;}
@@ -187,8 +189,8 @@ float:left; margin:0px 5px; display: inline;}
 /*right_aside_jobs_list*/
 .right_aside_jobs_list li{ width: 260px; border-bottom:#ededed dashed 1px; margin: 0 auto; padding: 5px 0px; overflow: hidden;}
 .right_aside_jobs_list_left{ width: 170px; float: left; line-height: 22px; font-size: 12px;}
-.right_aside_jobs_list_left h5{ font-weight: bold;}
-.right_aside_jobs_list_left strong{ font-weight: bold; margin-right: 4px;}
+.right_aside_jobs_list_left h5{ font-weight: bold; color: #2a7fb8;}
+.right_aside_jobs_list_left strong{ font-weight: bold; margin-right: 4px;color: #2a7fb8;}
 .right_aside_jobs_list_right{ float: left; width:90px ; text-align: right; line-height: 44px; font-size: 12px;}
 
 

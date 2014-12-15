@@ -38,7 +38,22 @@
 
 								<span class="pink_style">有钱就任性</span>
 							</div>
-
+							<div class="clear"></div>
+							<div class="company_fenxiang">
+								<div class="company_fenxiang_pre">分享到: </div>
+                             <!-- JiaThis Button BEGIN -->
+                             <div class="jiathis_style">
+	                          <a class="jiathis_button_qzone"></a>
+	                          <a class="jiathis_button_tsina"></a>
+	                          <a class="jiathis_button_tqq"></a>
+	                          <a class="jiathis_button_weixin"></a>
+	                          <a class="jiathis_button_renren"></a>
+	                          <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	                          <a class="jiathis_counter_style"></a>
+                            </div>
+                             <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                             <!-- JiaThis Button END -->   
+                           </div>
 							<div class="commpany_right_top">
 
 								<span class="attention"><i class="attention_icon add_attention"></i>1115</span>
@@ -188,7 +203,7 @@
 
 						</div>
 						<div class="commpany_more_down">
-							<span></span>
+							<span class="png_ie6"></span>
 
 						</div>
 					</div>
@@ -201,17 +216,17 @@
 							</ul>
 
 							<div class="selectBox">
-								<div class="select_box">
-									<span>工作地点</span>
+								<div class="select_box" id="select_box_1">
+									<span data-value="工作地点">工作地点</span>
 									<ul>
 										<li data-value="不限">不限</li>
-										<li data-value="不限">北京</li>
-										<li data-value="不限">上海</li>
-										<li data-value="不限">武汉</li>
-										<li data-value="不限">长春</li>
+										<li data-value="北京">北京</li>
+										<li data-value="上海">上海</li>
+										<li data-value="武汉">武汉</li>
+										<li data-value="长春">长春</li>
 									</ul>
 								</div>
-								<div class="select_box">
+								<div class="select_box" id="select_box_2">
 									<span>工作职能</span>
 									<ul>
 										<li data-value="ruby开发">ruby开发</li>
@@ -223,6 +238,29 @@
 								</div>
 							</div>
 						</div>
+						<script>
+						function select_fn(i){
+							var select_box=$("#select_box_"+i),
+							    select_value_span=select_box.find("span"),
+							    select_down=select_box.find("ul")
+							    select_option=select_down.children("li")
+							    select_box.bind('click',function(){
+							    select_down.show()
+							    })
+							    select_option.bind('click',function(){
+							    	var datvalue=$(this).attr("data-value")
+							    	select_value_span.attr("data-value",datvalue)
+							    	select_value_span.html(datvalue)
+							    	select_down.hide(100)
+							    })
+							    select_box.bind('mouseleave',function(){
+							    	select_down.hide(100)
+							    })
+						}
+						select_fn(1)
+						select_fn(2)
+						</script>
+						
 						<div class="commpany_jobs_list">
 							<ul class="jobs_listUl jobs_listUl_one" id="job-list">
 								<li>
@@ -341,15 +379,10 @@
                          </div>
                          <div class="blank_10px"></div>
                          <div class="commpany_more_down">
-							<span></span>
+						   <span class="png_ie6"></span>
 						</div>
 						</div>
                        <div class="blank_20px"></div>
-
-
-
-
-
 
 
 				</div>
@@ -497,7 +530,7 @@
 					rightbtn: "#commpany_production_right",
 					isAutomatic: 0, //自动执行效果的开关
 					deomShownum: 4, //滚动框架内要显示的滚动的子元素的个数 0表示一个默认是0,此阀值是为了处理滚动样式下框架可显示多个时滚动到最后出现                           //的滚动空白，保证最后一个显示的情况下直接滚动回第一个
-					BnanerGeshu: 1, //在滚动效果下的滚动个数，只对拥有左右按钮时有意义 		
+					BnanerGeshu: 1//在滚动效果下的滚动个数，只对拥有左右按钮时有意义 		
 				}, "#commpany_productionul")
 
 			})

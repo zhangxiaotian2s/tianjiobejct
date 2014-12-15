@@ -101,7 +101,7 @@
 		  })
 		  _imgboxli.bind("mouseleave",function(){
 		  	Automatic(); 
-		 _imgboxli.children("div").removeClass("right_mes_show left_mes_show")
+		// _imgboxli.children("div").removeClass("right_mes_show left_mes_show")
 		  	
 		  	
 		  })
