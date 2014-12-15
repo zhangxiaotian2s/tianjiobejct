@@ -16,6 +16,7 @@ a{ text-decoration: none;}
 .blank_10px{ height: 10px; clear:both; overflow: hidden;}
 .blank_15px{height: 15px; clear:both; overflow: hidden;}
 .blank_20px{height: 20px; clear:both; overflow: hidden;}
+.bk70{ background: url(../images/bk70.png);}
 
 .commpany_index_name_tag{ width: 715px; padding: 28px 0px; overflow: hidden; background: #fff;}
 .commpany_logo_box { width: 198px; height: 160px; overflow: hidden; float:left; margin-left: 20px;}
@@ -142,7 +143,7 @@ float:left; margin:0px 5px; display: inline;}
 .commany_right_btn{ width:100%; height: 50px; line-height: 50px; background: #5dade2; text-align: center;}
 .commany_right_btn a {font-size: 16px; color: #FFFFFF;}
 
-.right_aside{ width: 298px;}
+.right_aside{ width: 298px; padding-bottom: 10px;}
 .right_commpany_mes dl{ display: block; padding:20px 10px;}
 .right_commpany_mes dl dt,.right_commpany_mes dl dd{ display: block; margin:3px 5px; float: left; display: inline; background: #f7f7f7; height: 24px; font-size: 12px; line-height: 24px;}
 .right_commpany_mes dl dt{ width: 82px; text-align: center; color: #999999;}
@@ -154,7 +155,7 @@ float:left; margin:0px 5px; display: inline;}
 .right_aside_title{ height: 42px; line-height: 42px; border-bottom: #D1D1D1 solid 1px; position: relative;}
 .right_aside_title h3{ padding-left: 20px;}
 .right_aside_title a.more{position: absolute; padding-right:20px; top: 0px;  right: 20px; font-size: 12px; color: #2a7fb8;}
-
+.right_aside_title span{ position: absolute; right: 20px; top: 0px; font-size: 12px; color: #2a7fb8;}
 .commpany_creator_card{ padding: 20px; overflow: hidden;}
 .commpany_creator_pic{ width: 100px; height: 100px; overflow:hidden; float: left;}
 .commpany_creator_des{float: left; padding: 10px 0px 0px 10px; width: 145px;}
@@ -165,9 +166,30 @@ float:left; margin:0px 5px; display: inline;}
 .commpany_creator_intro{ font-size: 12px; padding:0px 20px 20px; line-height: 18px;}
 
 
+.right_head_50px_list{ padding-left: 8px;}
+.right_head_50px_list ul li{ width: 50px; height: 50px; overflow: hidden; float: left; margin:6px 10px; display: inline; }
+.right_aside_p{ font-size: 12px; line-height: 24px; color: #999999; padding-left: 10px;}
 
-._head_50px_list ul li{ width: 50px; height: 50px; float: left; margin:10px; display: inline;}
+/*add islogin */
+/*雇员处理*/
+#popup_layer_servant_ul{ width: 100%; height: 100%;}
+.popup_layer_servant{ position: relative; overflow: hidden; }
+.popu_layer_servant_box{ position: absolute;top: 6px; left: 18px; height: 50px; width: 260px;}
+.popu_layer_img_box{ width: 50px; height: 50px; overflow: hidden; float: left;}
+.popu_layer_servant_mes{ color: #fff; font-size: 12px; line-height: 20px; padding: 5px 8px; width:110px; height: 40px; float: left;}
+.popu_layer_servant_mes h5 strong{ font-weight:bold; margin-right: 5px;}
+.popu_layer_servant_btn{ width: 75px; float: left; height: 50px; padding-top: 14px;}
+.popu_layer_servant_btn a{ display: block; width: 75px; height: 22px; background: url(../images/company_icon.png);}
+.popu_layer_servant_btn a.start_chat{ background-position:0px -244px; }
+.popu_layer_servant_btn a.add_firends{ background-position:0px -266px;}
 
+
+/*right_aside_jobs_list*/
+.right_aside_jobs_list li{ width: 260px; border-bottom:#ededed dashed 1px; margin: 0 auto; padding: 5px 0px; overflow: hidden;}
+.right_aside_jobs_list_left{ width: 170px; float: left; line-height: 22px; font-size: 12px;}
+.right_aside_jobs_list_left h5{ font-weight: bold;}
+.right_aside_jobs_list_left strong{ font-weight: bold; margin-right: 4px;}
+.right_aside_jobs_list_right{ float: left; width:90px ; text-align: right; line-height: 44px; font-size: 12px;}
 
 
 
