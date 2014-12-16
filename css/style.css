@@ -2,11 +2,11 @@
 a{ text-decoration: none;}
 .wrap{ background:#e6e6e6; width: 100%; overflow: hidden;}
 .commpany_warp{ width: 1035px; margin: auto;}
-.commpany_index_left{ width: 717px; float: left;}
+.commpany_index_left{ width: 715px; float: left;}
 .font_st{ font-family: "宋体";}
 .font_wy{ font-family: "微软雅黑";}
 .section_box{ border: #d1d1d1 solid 1px; background: #FFFFFF; }
-.section_box_left{ width: 714px;}
+.section_box_left{ width: 713px;}
 .icon_i{ display: block;font-style: normal;}
 .clear{ clear:both}
 .feeds_tab{ width: 100%; height: 50px;}
@@ -18,7 +18,7 @@ a{ text-decoration: none;}
 .blank_20px{height: 20px; clear:both; overflow: hidden;}
 .bk70{ background: url(../images/bk70.png);}
 
-.commpany_index_name_tag{ width: 715px; padding: 28px 0px; overflow: hidden; background: #fff;}
+.commpany_index_name_tag{ width: 713px; padding: 28px 0px; overflow: hidden; background: #fff;}
 .commpany_logo_box { width: 198px; height: 160px; overflow: hidden; float:left; margin-left: 20px;}
 .commpany_logo_right{ width: 450px; float: left; padding-left: 15px; position: relative;}
 .commpany_logo_right h1{ font-size: 18px; line-height: 24px;font-weight: bold; }
@@ -33,26 +33,39 @@ a{ text-decoration: none;}
 .company_fenxiang div{ float: left;}
 .company_fenxiang_pre{ font-size: 14px; color: #999999;}
 .commpany_right_top{  position: absolute; top: 0px; right: 0px; height: 20px; }
-.commpany_right_top span{ display: block; float: right; font-size: 12px;  margin-right: 8px; display: inline;font-family: arial;}
+.commpany_right_top span{ display: block; float: right; font-size: 12px;  margin-right: 8px; display: inline;font-family: arial; cursor: pointer;}
 .commpany_right_top span i{ width:14px; height: 14px; background: url(../images/company_icon.png); float: left; margin-right: 5px; display: inline;  }
-.commpany_right_top span.like{ color: #e74c3c; line-height: 14px; margin-top: 4px;}
-.commpany_right_top span.un_like{line-height: 14px; margin-top: 4px;}
-.commpany_right_top span .like_icon{ background-position: 0px 0px;}
-.commpany_right_top span .is_like{ background-position:0px -14px ;}
-.commpany_right_top span .is_un_like{background-position:-14px -14px ;}
+.commpany_right_top span.like{ line-height: 14px; margin-top: 4px;}
+.commpany_right_top span.like:hover{color: #e74c3c;}
+.commpany_right_top span.like:hover i{background-position:0px -14px ;}
+.commpany_right_top span.like_icon i{ background-position: 0px 0px;}
+.commpany_right_top span.is_like i{ background-position:0px -14px ;}
+.commpany_right_top span.is_like{color: #e74c3c;}
+
+.commpany_right_top span.un_like{line-height: 14px; margin-top: 4px; color:#999999}
+.commpany_right_top span.un_like:hover{ color:#5dade2;}
+.commpany_right_top span.un_like:hover i{background-position:-14px -14px}
+.commpany_right_top span.un_like_icon i{background-position: -14px 0px;}
+.commpany_right_top span.is_un_like i{background-position:-14px -14px;}
+.commpany_right_top span.is_un_like{ color:#5dade2 ;}
+
+
 .commpany_right_top span.attention{ line-height: 18px; border:#d8d8d8 solid 1px; color: #999999; padding-right: 5px;}
 .commpany_right_top span .attention_icon{ width: 57px; height: 18px; cursor: pointer; }
+.commpany_right_top span.add_attention i{ background-position:0px -73px;}
+.commpany_right_top span.is_attention i{background-position:0px -93px;}
+.commpany_right_top span.is_attention:hover i{ background-position:0px -113px ;}
+.commpany_right_top span.cancel_attention i{ background-position:0px -113px ;}
 
-.commpany_right_top span.attention .add_attention{ background-position:0px -73px;}
 /*导航*/
-.commpany_nav{ width: 715px; background: url(../images/gszy_bk.png) repeat-x; height: 40px; }
+.commpany_nav{ width: 713px; background: url(../images/gszy_bk.png) repeat-x; height: 40px; }
 .commpany_nav  ul li{ width: 98px; float:left; text-align: center; height: 40px; line-height: 34px; font-size: 16px;font-family: "微软雅黑";}
 .commpany_nav  ul li.current_nav{ background:url(../images/company_btn_bk.png);}
 .commpany_nav  ul li.current_nav a,.commpany_nav  ul li.current_nav:hover a{ color: #FFFFFF;}
 .commpany_nav  ul li a{ color: #999999;}
 .commpany_nav  ul li:hover a{ color: #ec7064;}
 /*公司新闻*/
-.commpany_news{ width: 715px; overflow: hidden; padding-bottom: 30px; }
+.commpany_news{ width: 713px; overflow: hidden; padding-bottom: 30px; }
 .commpany_news_list ul li i{font-style: normal; color: #999999; margin:0px 15px;}
 .commpany_news_list ul li { width: 50%; float: left; font-size: 14px; line-height: 30px; height: 30px;}
 .commpany_news_list ul li a{ color: #2a7fb8;}
@@ -60,7 +73,7 @@ a{ text-decoration: none;}
 .commpany_hot_review {width: 100%; overflow: hidden; }
 
 /*公司产品*/
-.commpany_production{ width: 715px; padding-bottom: 10px; }
+.commpany_production{ width: 713px; padding-bottom: 10px; }
 .commpany_production_box{ width: 673px; height: 160px; margin: auto; position: relative; overflow: hidden;}
 #commpany_productionul{ position: absolute; left: 0px;top: 0px; width: 6000px;z-index: 1; }
 #commpany_productionul li{ width: 160px; height: 160px; float: left;margin-right:11px; display: inline; position: relative;  }
@@ -78,13 +91,13 @@ a{ text-decoration: none;}
 .commpan_pc_num{ width: 96%; height: 24px; line-height: 24px; font-size: 12px; color: #999999; text-align: right;}
 
 /*公司简介*/
-.commpany_intro{ width: 715px;padding-bottom: 10px; }
+.commpany_intro{ width: 713px;padding-bottom: 10px; }
 .commpany_intro_mes p{ line-height: 24px;  font-size: 14px; padding: 5px 10px 5px 25px;}
 .commpany_more_down{ width: 100%; height: 16px; padding: 5px 0px; cursor: pointer;}
 .commpany_more_down span{ display: block; width: 16px; height: 16px; background: url(../images/company_icon.png) 0px -226px; margin: 0 auto; }
 /*公司招聘*/
 
-.commpany_jobs{ width: 715px; overflow: hidden; padding-bottom: 20px; }
+.commpany_jobs{ width: 713px; overflow: hidden; padding-bottom: 20px; }
 .selectBox{width:260px; position: absolute; right: 0px; top: 15px;}
 .commpany_jobs .select_box{width: 110px; height:22px; line-height: 20px; border: #e0e0e0 solid 2px;background: url(../images/select_down.png) no-repeat center right; cursor: pointer; position:relative;
 float:left; margin:0px 5px; display: inline;}
@@ -141,7 +154,7 @@ float:left; margin:0px 5px; display: inline;}
 
 /*right*/
 
-.commpany_index_right{ width: 300px; margin-left:18px ; float: left; display: inline;}
+.commpany_index_right{ width: 300px; margin-left:20px ; float: left; display: inline;}
 .commany_right_btn{ width:100%; height: 50px; line-height: 50px; background: #5dade2; text-align: center;}
 .commany_right_btn a {font-size: 16px; color: #FFFFFF;}
 
@@ -170,9 +183,19 @@ float:left; margin:0px 5px; display: inline;}
 
 .right_head_50px_list{ padding-left: 8px;}
 .right_head_50px_list ul li{ width: 50px; height: 50px; overflow: hidden; float: left; margin:6px 10px; display: inline; }
-.right_aside_p{ font-size: 12px; line-height: 24px; color: #999999; padding-left: 10px;}
+.right_aside_p{ font-size: 12px; line-height: 24px; color: #999999; padding-left: 15px;}
 
 /*add islogin */
+
+/*职位分布*/
+.jobs_analyze_bottom { padding: 15px;}
+.jobs_analyze_bottom ul li{ width:124px; height: 24px;  float:left; font-size: 12px; padding-left: 5px;}
+.jobs_analyze_bottom ul li i{ width: 8px; height: 8px; float: left; margin-top: 3px; margin-right:10px; }
+.square_blue{ background: #5eabe1;}
+.square_yellow{background:#f5bf14}
+.square_green{background:#a3c83c}
+.square_orange{background:#e97e1e}
+
 /*雇员处理*/
 #popup_layer_servant_ul{ }
 .popup_layer_servant{ position: relative; overflow: hidden; width: 280px; }
@@ -198,6 +221,80 @@ float:left; margin:0px 5px; display: inline;}
 
 /*company_comment_content*/
 
-.commpany_comment_content{ width: 715px;}
+.commpany_comment_content{ width: 713px;}
+
+
+
+/*commpany_attention*/
+.commpany_attention{ width: 713px;}
+.commpany_attention_content img{ display: block; margin: auto ;}
+
+
+/*commpany_news_list*/
+.commpany_list_news{ width: 713px;}
+.list_news_box{ width: 673px; margin:20px auto;}
+.list_news_box ul li{ width: 653px; height: 40px; line-height: 40px; font-size: 14px; position:relative; padding-left: 20px;  background-image:url(../images/company_icon.png);
+ background-position:-85px -112px; background-repeat:  no-repeat;
+}
+.list_news_box ul li span{  font-size: 12px; position:absolute; right: 0px; top: 0px; color: #999999; }
+.list_news_box ul li  a{ font-size: 14px; color: #2a7fb8;}
+.list_news_box ul li.hot_news{background-position:-85px -72px;}
+.list_news_box ul li.hot_news a{ color:#ec7064 ;}
+
+/*page*/
+.page{text-align:center;margin:30px 0;}
+.page a{text-decoration:none;margin:0 3px;display:inline-block;padding:5px 10px;font-size:12px;color:#999da1;background:#eeeeee;-webkit-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;-ms-border-radius:2px;border-radius:2px;}
+.page .current{font-style:normal;display:inline-block;padding:5px 10px;-webkit-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;-ms-border-radius:2px;border-radius:2px;  font-size: 12px;}
+.page .current,.page a:hover{background:#ec7064;color:#fff;}
+.page span.gap{display:inline-block;width:2px;height:2px;background:#cccccc;margin:-10px 3px 0 3px;line-height:normal;font-size:0;}
+.page .totalPage{font-style:normal;color:#999da1;font-size:14px;margin-left:3px;}
+.page span.disabled{display:none;}
+
+
+
+/*attention list*/
+.company_relationship_left{ width: 298px; float:left;}
+.company_relationship_left_box{ width: 100%;}
+.nav_btn_box ul li{ width:296px; border-left:#FFFFFF solid 2px; height: 44px; line-height: 44px; font-size: 12px; color:#999; cursor: pointer;}
+
+.nav_btn_box i{ background: url(../images/company_icon.png);}
+.nav_btn_icon{ width: 70px; padding-left: 30px; float: left;}
+.nav_btn_icon i{  width: 14px; height: 14px; float: left; margin-top: 15px; margin-right: 5px; display: inline;}
+.nav_btn_icon i.like{   background-position: 0px 0px ; }
+.nav_btn_icon i.un_like{   background-position: -14px -0px ; }
+.nav_btn_icon i.attention{ background-position: -62px -0px ;} 
+.nav_btn_icon  a{ color: #999;}
+.nav_btn_number{ width: 150px; float: left;}
+.nav_btn_right{ width:46px; height: 40px; float:left;}
+.nav_btn_right  i{width: 14px; height: 14px; background-position: -62px -14px ; margin-top: 14px; }
+
+.nav_btn_box ul li:hover,.nav_btn_box ul li.current{ background: #ec7064;border-left:#c1392b solid 2px; color: #fff; }
+.nav_btn_box ul li:hover .nav_btn_icon  a,.nav_btn_box ul li.current .nav_btn_icon  a{ color: #FFFFFF;}
+.nav_btn_box ul li:hover .nav_btn_right  i,.nav_btn_box ul li.current .nav_btn_right  i{background-position: -76px -14px ;}
+.nav_btn_box ul li:hover .nav_btn_icon i.like,.nav_btn_box ul li.current .nav_btn_icon i.like{background-position: -28px 0px ;}
+.nav_btn_box ul li:hover .nav_btn_icon i.un_like,.nav_btn_box ul li.current .nav_btn_icon i.un_like{background-position: -44px 0px ;}
+.nav_btn_box ul li:hover .nav_btn_icon i.attention,.nav_btn_box ul li.current .nav_btn_icon i.attention{background-position: -76px 0px ;}
+
+.company_relationship_right{ width: 713px; float: left; margin-left: 20px; display: inline;}
+
+.company_relationship_list ul li{ width:663px; margin: auto; border-bottom: #d1d1d1  dashed   1px; padding: 50px 0px;}
+.company_relationship_list ul li p{ color: #999;}
+.relationship_left{ width: 200px; height: 50px; float: left;}
+.relationship_left .img_box{ width: 50px; height: 50px; position: relative; float: left;}
+.relationship_left .img_box img{ display: block;}
+.relationship_left .img_box a{ display: block; width: 50px; height: 50px; position: absolute; top: 0px; left: 0px; background: url(../images/company_icon.png) 0px -310px;}
+
+.relationship_left .relationship_name{ float: left; margin-left: 30px; display: inline; height: 40px; padding:5px 0px ; line-height: 20px; font-size: 12px;}
+.relationship_left .relationship_name h3{ color: #2a7fb8;}
+.relationship_mid{ width: 330px; height: 50px; float: left; }
+.relationship_mid p{ text-align: center; line-height: 50px; font-size: 12px; }
+
+.relationship_mid p a{ color: #2a7fb8;}
+
+.relationship_right{ width: 133px; height: 50px; float: left;}
+.relationship_right span { width: 75px; height: 22px; background: url(../images/company_icon.png);  margin:12px auto 0px}
+.relationship_right span.add_firends{  background-position: 0px -266px;}
+.relationship_right span.write_messages{ background-position: 0px -288px;}
+
 
 

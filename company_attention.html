@@ -70,11 +70,11 @@
 
 					<div class="commpany_nav">
 						<ul>
-							<li class="current_nav"><a href="#">首页</a>
+							<li ><a href="#">首页</a>
 							</li>
 							<li><a href="#">新闻</a>
 							</li>
-							<li><a href="#">公司点评</a>
+							<li class="current_nav"><a href="#">公司点评</a>
 							</li>
 							<li><a href="#">职位</a>
 							</li>
@@ -84,38 +84,28 @@
 
 
 					</div>
-					                         <div class="blank_20px"></div>
-					<div class="commpany_news section_box">
-						<div class="feeds_tab">
+					 <div class="blank_20px"></div>
+                      <div class="commpany_attention section_box">
+                      	<div class="feeds_tab">
 							<ul class="select_area">
-								<li><a href="javascript:void(0);">新闻动态</a>
+								<li><a href="javascript:void(0);">公司热评</a>
 								</li>
 							</ul>
 						</div>
-						<div class="commpany_news_list ">
-							<ul>
-								<li><a href="#"><i>【新闻】</i>消息称阿里巴巴5.6亿元投资韩国SM娱乐</a> </li>
-								<li><a href="#"><i>【新闻】</i>消息称阿里巴巴5.6亿元投资韩国SM娱乐</a> </li>
-								<li><a href="#"><i>【新闻】</i>消息称阿里巴巴5.6亿元投资韩国SM娱乐 </a>
-								</li>
-								<li><a href="#"><i>【新闻】</i>消息称阿里巴巴5.6亿元投资韩国SM娱乐</a> </li>
-								<li><a href="#"><i>【新闻】</i>消息称阿里巴巴5.6亿元投资韩国SM娱乐</a> </li>
-								<li><a href="#"><i>【新闻】</i>消息称阿里巴巴5.6亿元投资韩国SM娱乐</a> </li>
-								<li><a href="#"><i>【新闻】</i>消息称阿里巴巴5.6亿元投资韩国SM娱乐</a> </li>
-								<li><a href="#"><i>【新闻】</i>消息称阿里巴巴5.6亿元投资韩国SM娱乐</a> </li>
-							</ul>
-						</div>
-					</div>
+                      	<div class="commpany_attention_content">
+                      		
+                      		<img src="images/commpany_attention.png" width="673">
+                      		
+                      		<div class="blank_20px"></div>
+                      	</div>
+                      	
+                      	
+                      	
+                      </div>
+                      <div class="blank_20px"></div>
 
 
-
-
-                         <div class="blank_20px"></div>
-
-					<div class="commpany_hot_review">
-						<img src="images/company_gsrp.jpg">
-					</div>
-                         <div class="blank_20px"></div>
+                        
 
 					<div class="commpany_production section_box">
 						<div class="feeds_tab">
@@ -386,19 +376,9 @@
 						</div>
 						</div>
                        <div class="blank_20px"></div>
-
-
-
-
-
-
-
 				</div>
 				<div class="commpany_index_right">
-					<div class="commany_right_btn">
-						<a href="#">我要认领该公司</a>
-					</div>
-			   <div class="blank_20px"></div>
+				
 			   <div class="right_aside section_box right_commpany_mes">
 			   	<dl>
 			   		<dt>地点</dt>
@@ -448,18 +428,7 @@
                	</div>               	
                 <div class="jobs_analyze">
                 	<img src="images/tjt.png" width="298" height="275" style="display: block;">
-                	
                 </div>
-                <div class="jobs_analyze_bottom">
-                		<ul>
-                			<li><i class="icon_i square_blue"></i>其他</li>
-                			<li><i class="icon_i square_yellow"></i>技术研发</li>
-                			<li><i class="icon_i square_green"></i>管理</li>
-                			<li><i class="icon_i square_orange"></i>市场/公关/品牌</li>
-                		</ul>
-                		
-                	</div>
-                	<div class="clear"></div>
                </div>  
                
                <div class="blank_20px"></div>
@@ -498,7 +467,56 @@
                
                	<div class="clear"></div>
                	</div>
-
+               	<script>
+               		$(document).ready(function(e){
+               		  var popup_layer_servantli=$("#popup_layer_servant_ul").children("li")
+               		  var popu_servant_box=$("#popu_layer_servant_box"),
+               		      servant_name=$(".popu_layer_servant_mes").find("strong"),
+               		      servant_position=$(".popu_layer_servant_mes").find("span"),
+               		      servant_commpany=$(".popu_layer_servant_mes").find("p"),
+               		      servant_img=$(".popu_layer_img_box").find("img"),
+               		      servant_btn=$(".popu_layer_servant_btn").find("a")
+               		   popup_layer_servantli.bind('mouseover',function(){
+               		   	    var $this=$(this),
+               		   	        $this_img=$this.find("img")
+                                $top_value=$this.position().top+6
+                            function get_attr(attrname){
+               		   	    	return $this_img.attr(attrname)
+               		   	    }
+               		   	      
+               		   	var popup_servant_attr={
+               		   		imgurl:get_attr("src"),
+               		   		servant_name:get_attr("data-servant-name"),
+               		   		servant_position:get_attr("data-servant-position"),
+               		   		servant_commpany:get_attr("data-servant-commpany"),
+               		   	    servant_isfriend:get_attr("data-servant-isfriend")
+               		   	}
+               		    popu_servant_box.show()
+               		    $("#popu_layer_servant_box").css('top',$top_value)    
+               		      servant_name.html(popup_servant_attr.servant_name)
+               		      servant_img.attr("src",popup_servant_attr.imgurl)
+               		      servant_position.html(popup_servant_attr.servant_position)
+               		      servant_commpany.html(popup_servant_attr.servant_commpany)
+               		      if(popup_servant_attr.servant_isfriend==1){
+               		      	
+               		      	servant_btn.removeClass().addClass("add_firends")
+               		      }else{
+               		      	servant_btn.removeClass().addClass("start_chat")
+               		      	
+               		      }
+               		      
+               		   })
+               		   $("#servant_box").bind('mouseleave',function(){
+               		   	popu_servant_box.hide()
+               		   })
+               		   
+               			
+               		})
+               		
+           
+               	</script>
+               	
+               
                 <div class="blank_20px"></div>
                	<div class="right_aside section_box">
                		<div class="right_aside_title">
@@ -610,24 +628,11 @@
                			</li>
                			
                		</ul>
-               		
-               		
                	</div>
-               	
-               	
                	</div>
-               	
-               	
-               	
-               	
 				</div>
-				
-				
-				
-
 			</div>
 		</div>
-		<script type="text/javascript" src="js/popup_servant.js" ></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$.fn.scrollfn({
@@ -643,10 +648,7 @@
 				//style 辅助
 				$("#commpany_productionul").find("li").first().find("div").addClass("right_mes_show")
 				$(".right_aside_jobs_list").find("li").last().css("border",'none')
-				
-
 			})
 		</script>
 	</body>
-
 </html>
