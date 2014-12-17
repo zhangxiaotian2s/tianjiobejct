@@ -79,8 +79,18 @@
 			}
 		}
 		///////// 新增处理鼠标放上去现实展示层的效果 ／／／定制方案
+		var _imgboxli=ImgBox.children(Options.ImgBoxChild);
+			
+			//设置_imgboxli的Z-index 解决IE bug 问题
+		    for(z=0;z<_imgboxli.length;z++){
+		    	_imgboxli.eq(z).css("z-index",100-z)
+		    	
+		    }
 		function overimagebox(){
 			var _imgboxli=ImgBox.children(Options.ImgBoxChild);
+			
+		
+			
 			
 			_imgboxli.bind("mouseover",function(){
 		    var thisi = Math.ceil(Math.abs(ImgBox.position().left / (ImgBox.children(Options.ImgBoxChild).outerWidth(true)*Options.BnanerGeshu)) );
@@ -90,9 +100,16 @@
 			     var control_i=i-thisi;
 			     var partition_i=Math.round(Options.deomShownum/2)
 			     if(control_i<partition_i){
+			     	 for(z=0;z<_imgboxli.length;z++){
+		          	_imgboxli.eq(z).css("z-index",100-z)
+		    	
+		              }
 			     	_imgboxli.children("div").removeClass("right_mes_show left_mes_show").eq(i).addClass("right_mes_show")
 			     }
 			     else{
+			     	 for(z=0;z<_imgboxli.length;z++){
+		    	           _imgboxli.eq(z).css("z-index",100+z)
+		                 }
 			     	_imgboxli.children("div").removeClass("right_mes_show left_mes_show").eq(i).addClass("left_mes_show")
 			     	
 			     }

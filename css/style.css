@@ -1,4 +1,5 @@
 
+*{ margin: 0; padding: 0;}
 a{ text-decoration: none;}
 .wrap{ background:#e6e6e6; width: 100%; overflow: hidden;}
 .commpany_warp{ width: 1035px; margin: auto;}
@@ -81,7 +82,7 @@ a{ text-decoration: none;}
 #commpany_productionul li div h4{ width: 157px; text-align:center; height:30px; line-height: 30px; margin-top: 10px;}
 #commpany_productionul li div p{ width: 131px; padding: 0px 13px; line-height:18px; font-size: 12px;}
 
-#commpany_productionul li div.right_mes_show{ display:block; background:#fed721 url(../images/company_cp_left_mes_bk.png) no-repeat center left;left: 163px; padding-left: 11px;}
+#commpany_productionul li div.right_mes_show{ display:block; background:#fed721 url(../images/company_cp_left_mes_bk.png) no-repeat center left;left: 163px; padding-left: 11px;z-index: 200; }
 #commpany_productionul li div.left_mes_show{ display:block; background:#fed721 url(../images/company_cp_right_mes_bk.png) no-repeat center right;left: -174px; padding-right: 11px;}
 #commpany_production_left{ display: block;width: 42px; height: 42px; position: absolute; left: 0px ;top: 60px; z-index: 3;  background: url(../images/company_icon.png); background-position:-42px  -135px ;}
 #commpany_production_right{ display: block;width: 42px; height: 42px; position: absolute; right: 0px ;top: 60px; z-index: 3;  background: url(../images/company_icon.png); background-position:0px  -135px ;}
@@ -255,9 +256,9 @@ float:left; margin:0px 5px; display: inline;}
 /*attention list*/
 .company_relationship_left{ width: 298px; float:left;}
 .company_relationship_left_box{ width: 100%;}
-.nav_btn_box ul li{ width:296px; border-left:#FFFFFF solid 2px; height: 44px; line-height: 44px; font-size: 12px; color:#999; cursor: pointer;}
+.nav_btn_box ul li{ width:296px; border-left:#FFFFFF solid 2px; height: 44px; overflow: hidden; line-height: 44px; font-size: 12px; color:#999; cursor: pointer;float:left}
 
-.nav_btn_box i{ background: url(../images/company_icon.png);}
+.nav_btn_box i{ background-image: url(../images/company_icon.png);}
 .nav_btn_icon{ width: 70px; padding-left: 30px; float: left;}
 .nav_btn_icon i{  width: 14px; height: 14px; float: left; margin-top: 15px; margin-right: 5px; display: inline;}
 .nav_btn_icon i.like{   background-position: 0px 0px ; }
@@ -277,7 +278,7 @@ float:left; margin:0px 5px; display: inline;}
 
 .company_relationship_right{ width: 713px; float: left; margin-left: 20px; display: inline;}
 
-.company_relationship_list ul li{ width:663px; margin: auto; border-bottom: #d1d1d1  dashed   1px; padding: 50px 0px;}
+.company_relationship_list ul li{ width:663px; height:50px; margin: auto; border-bottom: #d1d1d1  dashed   1px; padding: 50px 0px;overflow:hidden; }
 .company_relationship_list ul li p{ color: #999;}
 .relationship_left{ width: 200px; height: 50px; float: left;}
 .relationship_left .img_box{ width: 50px; height: 50px; position: relative; float: left;}
